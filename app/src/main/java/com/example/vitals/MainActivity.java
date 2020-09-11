@@ -30,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
         });
         //button to call 911
         //resource to look at: https://www.tutorialspoint.com/android/android_phone_calls.htm
+        //delete this after - only did this to see if commit works
+        findViewById(R.id.locate).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, locate.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
 
     }
 }
