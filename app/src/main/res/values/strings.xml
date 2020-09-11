@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">vitals</string>
+    <string name="record_vitals">Record Vitals</string>
+    <string name="vitals">Vitals</string>
+</resources>
