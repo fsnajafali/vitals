@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
+
+
     <Button
         android:id="@+id/vitals"
         android:layout_width="219dp"
