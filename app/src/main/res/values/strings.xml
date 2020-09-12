@@ -2,4 +2,5 @@
     <string name="app_name">vitals</string>
     <string name="record_vitals">Record Vitals</string>
     <string name="vitals">Vitals</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaGd1MCIsImEiOiJja2V6Y294ZmkxMmhiMzNtZmM0ZGF2eXBkIn0.gVpladmKWbw4wy-HUn45nA</string>
 </resources>
