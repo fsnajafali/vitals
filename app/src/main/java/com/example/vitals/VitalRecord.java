@@ -35,4 +35,35 @@ public class VitalRecord {
         this.temperature = temperature;
     }
 
+    public String getDate() {
+        return date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public double getBloodPressureDiatolic() {
+        return bloodPressureDiatolic;
+    }
+
+    public double getBloodPressureSystolic() {
+        return bloodPressureSystolic;
+    }
+
+    public double getBloodSugar() {
+        return bloodSugar;
+    }
+
+    public double getHeartRate() {
+        return heartRate;
+    }
+
+    public double getSpo2() {
+        return spo2;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
 }
