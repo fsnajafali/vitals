@@ -11,6 +11,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.gson.JsonObject;
+
+import org.json.JSONObject;
+
+import java.util.LinkedList;
 
 public class vitals extends AppCompatActivity {
     //TO-DO: Integrate firebase to this page
@@ -21,18 +26,5 @@ public class vitals extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vitals);
-        mDatabase = FirebaseDatabase.getInstance().getReference();
-
-        ValueEventListener postListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                System.out.println(dataSnapshot);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-            }
-        };
-        mDatabase.addValueEventListener(postListener);
     }
 }
