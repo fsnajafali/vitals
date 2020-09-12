@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "469201996563",
+    "firebase_url": "https://vitals-858d7.firebaseio.com",
+    "project_id": "vitals-858d7",
+    "storage_bucket": "vitals-858d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469201996563:android:67923a938ac8953ca2a8e6",
+        "android_client_info": {
+          "package_name": "com.example.vitals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469201996563-i2836uaqqidg0c9s8gsgj331cbrf4uil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8JObIUJgXoVwGUjA18CI0fXZ61prQl2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469201996563-i2836uaqqidg0c9s8gsgj331cbrf4uil.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
