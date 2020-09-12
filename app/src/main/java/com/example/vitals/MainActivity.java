@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //button to navigate to location page
-        /****
         findViewById(R.id.locate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
-         ***/
         //button to call 911
         //resource to look at: https://www.tutorialspoint.com/android/android_phone_calls.htm
         //delete this after - only did this to see if commit works
