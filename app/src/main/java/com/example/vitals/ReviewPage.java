@@ -42,13 +42,13 @@ public class ReviewPage extends AppCompatActivity
         setContentView(R.layout.activity_reviewpage);
 
         // next up button to vitals history page
-        findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ReviewPage.this, VitalRecord.class);
-                ReviewPage.this.startActivity(intent);
-            }
-        });
+//        findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(ReviewPage.this, VitalHistory.class);
+//                ReviewPage.this.startActivity(intent);
+//            }
+//        });
 
         findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
             @Override

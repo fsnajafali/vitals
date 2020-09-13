@@ -3,6 +3,7 @@
     package="com.example.vitals">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +20,7 @@
         <activity android:name=".SP02" />
         <activity android:name=".Temperature" />
         <activity android:name=".ReviewPage" />
+        <activity android:name=".VitalHistory" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

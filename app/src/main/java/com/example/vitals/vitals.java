@@ -25,5 +25,13 @@ public class vitals extends AppCompatActivity
                 vitals.this.startActivity(intent);
             }
         });
+
+        findViewById(R.id.vitalsHistory).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(vitals.this, VitalHistory.class);
+                vitals.this.startActivity(intent);
+            }
+        });
     }
 }

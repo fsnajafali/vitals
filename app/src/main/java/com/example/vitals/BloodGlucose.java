@@ -47,6 +47,7 @@ public class BloodGlucose extends AppCompatActivity
             }
         });
 
+
         findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
