@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.baoyachi.stepview.HorizontalStepView;
@@ -28,7 +29,7 @@ public class SP02 extends AppCompatActivity
     //resource: https://www.youtube.com/watch?v=71H9-MRXYOE
 
     TextView dateTime;
-    TextView input;
+    EditText input;
     // HorizontalStepView horizontalStepView;
 
     @Override
@@ -36,6 +37,8 @@ public class SP02 extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sp02);
+
+        input = findViewById(R.id.input);
 
         // next up button to another page
         findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {

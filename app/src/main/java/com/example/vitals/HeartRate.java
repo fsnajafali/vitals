@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.baoyachi.stepview.HorizontalStepView;
@@ -28,13 +29,15 @@ public class HeartRate extends AppCompatActivity
 
     TextView dateTime;
     // HorizontalStepView horizontalStepView;
-    TextView input;
+    EditText input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heartrate);
+
+        input = findViewById(R.id.input);
 
         // next up button to another page
         findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {

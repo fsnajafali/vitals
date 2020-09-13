@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.baoyachi.stepview.HorizontalStepView;
@@ -24,7 +25,7 @@ import static com.example.vitals.R.layout.activity_bloodpressure;
 public class BloodGlucose extends AppCompatActivity
 {
     TextView dateTime;
-    TextView input;
+    EditText input;
     // HorizontalStepView horizontalStepView;
 
     @Override
@@ -32,6 +33,8 @@ public class BloodGlucose extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloodglucose);
+
+        input = findViewById(R.id.input);
 
         // next up button to another page
         findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {

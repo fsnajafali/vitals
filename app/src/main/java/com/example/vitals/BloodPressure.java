@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.baoyachi.stepview.HorizontalStepView;
@@ -28,13 +29,16 @@ public class BloodPressure extends AppCompatActivity
 
     TextView dateTime;
     // HorizontalStepView horizontalStepView;
-    TextView input, input2;
+    EditText input, input2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloodpressure);
+
+        input = findViewById(R.id.input);
+        input2 = findViewById(R.id.input2);
 
         // next up button to another page
         findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {
