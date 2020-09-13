@@ -31,15 +31,11 @@ public class locate extends AppCompatActivity {
                 mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/hgu0/ckezbufr11d8l19muufa6rr79"), new Style.OnStyleLoaded() {
                     @Override
                     public void onStyleLoaded(@NonNull Style style) {
-
                         // Map is set up and the style has loaded. Now you can add data or make other map adjustments
-
-
                     }
                 });
 
             }
         });
-
     }
 }
