@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.baoyachi.stepview.HorizontalStepView;
+import com.google.firebase.heartbeatinfo.HeartBeatInfo;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -40,6 +41,14 @@ public class SP02 extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SP02.this, Temperature.class);
+                SP02.this.startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SP02.this, HeartRate.class);
                 SP02.this.startActivity(intent);
             }
         });

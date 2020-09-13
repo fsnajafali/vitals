@@ -30,8 +30,8 @@
         android:layout_marginTop="212dp"
         android:layout_marginRight="14dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Heart Rate"
-        android:textSize="18sp"
+        android:text="Heart Rate (beats/min)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText

@@ -30,8 +30,8 @@
         android:layout_marginTop="212dp"
         android:layout_marginRight="14dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Blood Glucose"
-        android:textSize="18sp"
+        android:text="Blood Glucose (mg/dL)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText

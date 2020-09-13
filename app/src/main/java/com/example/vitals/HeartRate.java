@@ -44,6 +44,14 @@ public class HeartRate extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HeartRate.this, BloodPressure.class);
+                HeartRate.this.startActivity(intent);
+            }
+        });
+
         dateTime = findViewById(R.id.dateTime);
 
         Date currentTime = Calendar.getInstance().getTime();

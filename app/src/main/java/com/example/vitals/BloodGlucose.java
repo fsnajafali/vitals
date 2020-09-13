@@ -43,6 +43,14 @@ public class BloodGlucose extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BloodGlucose.this, Temperature.class);
+                BloodGlucose.this.startActivity(intent);
+            }
+        });
+
         dateTime = findViewById(R.id.dateTime);
 
         Date currentTime = Calendar.getInstance().getTime();

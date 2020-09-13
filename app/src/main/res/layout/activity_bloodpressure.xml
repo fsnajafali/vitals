@@ -30,8 +30,8 @@
         android:layout_marginTop="183dp"
         android:layout_marginRight="0dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Blood Pressure"
-        android:textSize="18sp"
+        android:text="Blood Pressure (mmHg)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText

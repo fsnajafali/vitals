@@ -44,6 +44,14 @@ public class Temperature extends AppCompatActivity
             }
         });
 
+        findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Temperature.this, SP02.class);
+                Temperature.this.startActivity(intent);
+            }
+        });
+
         dateTime = findViewById(R.id.dateTime);
 
         Date currentTime = Calendar.getInstance().getTime();

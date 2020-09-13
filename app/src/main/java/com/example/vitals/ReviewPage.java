@@ -2,10 +2,12 @@ package com.example.vitals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -35,6 +37,21 @@ public class ReviewPage extends AppCompatActivity
         setContentView(R.layout.activity_reviewpage);
 
         // next up button to vitals history page
+        findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReviewPage.this, VitalRecord.class);
+                ReviewPage.this.startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReviewPage.this, BloodGlucose.class);
+                ReviewPage.this.startActivity(intent);
+            }
+        });
 
         dateTime = findViewById(R.id.dateTime);
 
