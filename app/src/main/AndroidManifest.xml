@@ -18,6 +18,7 @@
         <activity android:name=".HeartRate" />
         <activity android:name=".SP02" />
         <activity android:name=".Temperature" />
+        <activity android:name=".ReviewPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

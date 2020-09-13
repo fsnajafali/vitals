@@ -33,7 +33,7 @@ public class SP02 extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bloodpressure);
+        setContentView(R.layout.activity_sp02);
 
         // next up button to another page
         findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {

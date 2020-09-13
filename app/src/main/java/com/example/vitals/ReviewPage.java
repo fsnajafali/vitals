@@ -32,7 +32,7 @@ public class ReviewPage extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bloodpressure);
+        setContentView(R.layout.activity_reviewpage);
 
         // next up button to vitals history page
 
