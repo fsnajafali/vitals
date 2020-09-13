@@ -28,7 +28,7 @@ public class locate extends AppCompatActivity {
             @Override
             public void onMapReady(@NonNull MapboxMap mapboxMap) {
 
-                mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+                mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/hgu0/ckezbufr11d8l19muufa6rr79"), new Style.OnStyleLoaded() {
                     @Override
                     public void onStyleLoaded(@NonNull Style style) {
 
