@@ -1,7 +1,6 @@
 package com.example.vitals;
 
 import com.google.firebase.database.IgnoreExtraProperties;
-
 @IgnoreExtraProperties
 public class VitalRecord {
     public String date;

@@ -15,7 +15,10 @@ import com.google.gson.JsonObject;
 
 import org.json.JSONObject;
 
+import java.lang.reflect.Field;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class vitals extends AppCompatActivity {
     //TO-DO: Integrate firebase to this page
@@ -31,21 +34,20 @@ public class vitals extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference();
         final LinkedList<VitalRecord> vitalsRecords = new LinkedList<VitalRecord>();
 
-        ValueEventListener vitalListener = new ValueEventListener() {
+        ValueEventListener readVitalListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot child : dataSnapshot.getChildren()) {
-                    DataSnapshot vitalPath = child.child("vitals");
-
+                    DataSnapshot vitalPath = child;
                     vitalsRecords.add(new VitalRecord(
                             "date",
                             "time",
-                            (long) vitalPath.child("bloodPressure").child("diatolic").getValue(),
-                            (long) vitalPath.child("bloodPressure").child("systolic").getValue(),
+                            (long) vitalPath.child("bloodPressureDiatolic").getValue(),
+                            (long) vitalPath.child("bloodPressureSystolic").getValue(),
                             (long) vitalPath.child("bloodSugar").getValue(),
                             (long) vitalPath.child("heartRate").getValue(),
                             (long) vitalPath.child("spo2").getValue(),
-                            (double) vitalPath.child("temperature").getValue()
+                            (long) vitalPath.child("temperature").getValue()
                             ));
                 }
             }
@@ -54,7 +56,8 @@ public class vitals extends AppCompatActivity {
             public void onCancelled(DatabaseError vitalListener) {
             }
         };
-        mDatabase.addValueEventListener(vitalListener);
-        // END OF FIREBASE STUFF
+        mDatabase.addValueEventListener(readVitalListener);
+        System.out.println(vitalsRecords);
+        // END OF FIREBASE READING STUFF
     }
 }
