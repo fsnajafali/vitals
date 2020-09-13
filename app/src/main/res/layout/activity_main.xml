@@ -17,7 +17,7 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/rounded_corners"
         android:drawableLeft="@android:drawable/ic_menu_add"
-        android:text="Get Started"
+        android:text="Vitals"
         android:textColor="#FFF"
         app:layout_constraintBottom_toTopOf="@+id/locate"
         app:layout_constraintEnd_toEndOf="parent"

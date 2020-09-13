@@ -3,6 +3,7 @@ package com.example.vitals;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -29,8 +30,11 @@ public class vitals extends AppCompatActivity
         findViewById(R.id.vitalsHistory).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(vitals.this, VitalHistory.class);
-                vitals.this.startActivity(intent);
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://vitals-858d7.web.app/"));
+                startActivity(intent);
             }
         });
     }

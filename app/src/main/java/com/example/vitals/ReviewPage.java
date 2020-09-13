@@ -2,14 +2,17 @@ package com.example.vitals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.baoyachi.stepview.HorizontalStepView;
 
@@ -47,7 +50,13 @@ public class ReviewPage extends AppCompatActivity
         findViewById(R.id.completeBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ReviewPage.this, VitalHistory.class);
+                Context context = getApplicationContext();
+                CharSequence text = "Data Added!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+                Intent intent = new Intent(ReviewPage.this, vitals.class);
                 ReviewPage.this.startActivity(intent);
                 fb.writeFBData();
             }
@@ -56,8 +65,12 @@ public class ReviewPage extends AppCompatActivity
         findViewById(R.id.btnArrow).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ReviewPage.this, BloodGlucose.class);
-                ReviewPage.this.startActivity(intent);
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://vitals-858d7.web.app/"));
+
+                startActivity(intent);
             }
         });
 
