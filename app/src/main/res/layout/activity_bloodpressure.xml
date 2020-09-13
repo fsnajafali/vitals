@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="22dp"
+        android:text="Date"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:id="@+id/bloodPressure"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/systolicText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginRight="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Blood Pressure"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/systolicInput"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="254dp"
+        android:layout_marginRight="238dp"
+        android:ems="10"
+        android:hint="Enter upper #"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/DiastolicInput"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="254dp"
+        android:layout_marginRight="53dp"
+        android:ems="10"
+        android:hint="Enter lower #"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/systolicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="227dp"
+        android:layout_marginRight="331dp"
+        android:text="Systolic" />
+
+    <TextView
+        android:id="@+id/diastolicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="222dp"
+        android:layout_marginRight="143dp"
+        android:text="Diastolic" />
+
+    <Button
+        android:id="@+id/nextupHRbtn"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="335dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Next Up: Heart Rate"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="352dp"
+        app:srcCompat="@drawable/ic_arrow_back_black_18dp" />
+
+    <Button
+        android:id="@+id/btnArrow"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="341dp"
+        android:background="#0AFFFFFF" />
+
+    <ImageView
+        android:id="@+id/imgNewVital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginRight="216dp"
+        app:srcCompat="@drawable/ic_new_vital" />
+
+</RelativeLayout>
