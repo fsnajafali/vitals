@@ -21,8 +21,7 @@ import static com.example.vitals.R.layout.activity_bloodpressure;
 
 public class BloodGlucose extends AppCompatActivity
 {
-//TO-DO: Integrate firebase to this page
-    //resource: https://www.youtube.com/watch?v=71H9-MRXYOE
+
 
     TextView dateTime;
     // HorizontalStepView horizontalStepView;

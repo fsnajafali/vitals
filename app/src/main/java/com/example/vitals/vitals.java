@@ -3,21 +3,9 @@ package com.example.vitals;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
-import com.baoyachi.stepview.HorizontalStepView;
-
-import java.text.DateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
 
 public class vitals extends AppCompatActivity
 {
@@ -30,12 +18,14 @@ public class vitals extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vitals);
 
-        findViewById(R.id.newVital).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.startvitals).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(vitals.this, BloodPressure.class);
+                Intent intent = new Intent(vitals.this, VitalRecord.class);
                 vitals.this.startActivity(intent);
             }
         });
+
+
     }
 }
