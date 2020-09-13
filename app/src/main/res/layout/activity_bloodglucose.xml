@@ -20,10 +20,10 @@
         tools:layout_editor_absoluteY="72dp" />
 
     <TextView
-        android:id="@+id/bloodPressure"
+        android:id="@+id/title"
         android:layout_width="121dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/systolicInput"
+        android:layout_alignStart="@+id/input"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="0dp"
@@ -31,10 +31,11 @@
         android:layout_marginRight="14dp"
         android:fontFamily="sans-serif-medium"
         android:text="Blood Glucose"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/systolicInput"
+        android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -46,7 +47,7 @@
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/nextupHRbtn"
+        android:id="@+id/nextupbtn"
         android:layout_width="327dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="72dp" />
 
     <TextView
-        android:id="@+id/bloodPressure"
+        android:id="@+id/title"
         android:layout_width="121dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/systolicText"
@@ -31,10 +31,11 @@
         android:layout_marginRight="0dp"
         android:fontFamily="sans-serif-medium"
         android:text="Blood Pressure"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/systolicInput"
+        android:id="@+id/input"
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -46,7 +47,7 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/DiastolicInput"
+        android:id="@+id/input2"
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -78,7 +79,7 @@
         android:text="Diastolic" />
 
     <Button
-        android:id="@+id/nextupHRbtn"
+        android:id="@+id/nextupbtn"
         android:layout_width="327dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

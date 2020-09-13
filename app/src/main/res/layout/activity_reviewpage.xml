@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/completeBtn"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="583dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Complete"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="22dp"
+        android:text="Date"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/completeBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginRight="244dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Final Review"
+        android:textColor="#575454"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="352dp"
+        app:srcCompat="@drawable/ic_arrow_back_black_18dp" />
+
+    <Button
+        android:id="@+id/btnArrow"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="341dp"
+        android:background="#0AFFFFFF" />
+
+    <ImageView
+        android:id="@+id/imgNewVital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginRight="216dp"
+        app:srcCompat="@drawable/ic_new_vital" />
+
+    <TextView
+        android:id="@+id/finalateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="285dp"
+        android:layout_marginRight="340dp"
+        android:text="Date"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/resultDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="277dp"
+        android:layout_marginRight="121dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/systollicBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="324dp"
+        android:layout_marginRight="300dp"
+        android:text="Systollic BP"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/diastollicBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="373dp"
+        android:layout_marginRight="295dp"
+        android:text="Diastollic BP"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/heartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="416dp"
+        android:layout_marginRight="305dp"
+        android:text="Heart Rate"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sp02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="461dp"
+        android:layout_marginRight="332dp"
+        android:text="SP02"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="499dp"
+        android:layout_marginRight="294dp"
+        android:text="Temperature"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/bloodGlucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="538dp"
+        android:layout_marginRight="284dp"
+        android:text="Blood Glucose"
+        android:textSize="12sp" />
+
+</RelativeLayout>

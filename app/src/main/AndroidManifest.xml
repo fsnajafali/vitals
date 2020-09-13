@@ -15,9 +15,13 @@
         <activity android:name=".vitals" />
         <activity android:name=".BloodPressure" />
         <activity android:name=".BloodGlucose" />
+        <activity android:name=".HeartRate" />
+        <activity android:name=".SP02" />
+        <activity android:name=".Temperature" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

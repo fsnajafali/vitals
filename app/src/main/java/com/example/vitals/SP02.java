@@ -21,9 +21,10 @@ import java.util.List;
 
 import static com.example.vitals.R.layout.activity_bloodpressure;
 
-public class BloodGlucose extends AppCompatActivity
+public class SP02 extends AppCompatActivity
 {
-
+//TO-DO: Integrate firebase to this page
+    //resource: https://www.youtube.com/watch?v=71H9-MRXYOE
 
     TextView dateTime;
     // HorizontalStepView horizontalStepView;
@@ -38,8 +39,8 @@ public class BloodGlucose extends AppCompatActivity
         findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BloodGlucose.this, ReviewPage.class);
-                BloodGlucose.this.startActivity(intent);
+                Intent intent = new Intent(SP02.this, Temperature.class);
+                SP02.this.startActivity(intent);
             }
         });
 

@@ -2,12 +2,10 @@ package com.example.vitals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -21,11 +19,13 @@ import java.util.List;
 
 import static com.example.vitals.R.layout.activity_bloodpressure;
 
-public class BloodGlucose extends AppCompatActivity
+public class ReviewPage extends AppCompatActivity
 {
-
+//TO-DO: Integrate firebase to this page
+    //resource: https://www.youtube.com/watch?v=71H9-MRXYOE
 
     TextView dateTime;
+
     // HorizontalStepView horizontalStepView;
 
     @Override
@@ -34,22 +34,21 @@ public class BloodGlucose extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloodpressure);
 
-        // next up button to another page
-        findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BloodGlucose.this, ReviewPage.class);
-                BloodGlucose.this.startActivity(intent);
-            }
-        });
+        // next up button to vitals history page
 
         dateTime = findViewById(R.id.dateTime);
 
         Date currentTime = Calendar.getInstance().getTime();
         String formattedDate = DateFormat.getDateInstance(DateFormat.LONG).format(currentTime);
+
         formattedDate = formattedDate + " " + DateFormat.getTimeInstance().format(currentTime);
 
         dateTime.setText(formattedDate);
+
+        String shortDate = DateFormat.getDateInstance(DateFormat.DEFAULT).format(currentTime);
+        shortDate = shortDate + " " + DateFormat.getTimeInstance().format(currentTime);
+
+
 
 //        horizontalStepView = (HorizontalStepView)findViewById(R.id.horizontalStepView);
 //        List<String> steps = new ArrayList<>();

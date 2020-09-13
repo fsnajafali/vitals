@@ -2,10 +2,12 @@ package com.example.vitals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -33,6 +35,15 @@ public class BloodPressure extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloodpressure);
 
+        // next up button to another page
+        findViewById(R.id.nextupbtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BloodPressure.this, HeartRate.class);
+                BloodPressure.this.startActivity(intent);
+            }
+        });
+
         dateTime = findViewById(R.id.dateTime);
 
         Date currentTime = Calendar.getInstance().getTime();
@@ -40,8 +51,6 @@ public class BloodPressure extends AppCompatActivity
         formattedDate = formattedDate + " " + DateFormat.getTimeInstance().format(currentTime);
 
         dateTime.setText(formattedDate);
-
-        // Log.d("MyLog: ", formattedDate);
 
 //        horizontalStepView = (HorizontalStepView)findViewById(R.id.horizontalStepView);
 //        List<String> steps = new ArrayList<>();
