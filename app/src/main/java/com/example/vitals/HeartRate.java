@@ -44,8 +44,9 @@ public class HeartRate extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HeartRate.this, SP02.class);
-                String heartRate = input.getText().toString();
-                intent.putExtra("HEARTRATE", heartRate);
+                double heartRate = Double.parseDouble(input.getText().toString());
+                SavedVital.getInstance().vitalRecord.heartRate = heartRate;
+
                 HeartRate.this.startActivity(intent);
             }
         });

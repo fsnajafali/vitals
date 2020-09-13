@@ -45,8 +45,11 @@ public class BloodPressure extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BloodPressure.this, HeartRate.class);
-                String systolic = input.getText().toString();
-                String diastollic = input2.getText().toString();
+                double systolic = Double.parseDouble(input.getText().toString());
+                double diastollic = Double.parseDouble(input2.getText().toString());
+                SavedVital.getInstance().vitalRecord.bloodPressureDiatolic = diastollic;
+                SavedVital.getInstance().vitalRecord.bloodPressureSystolic = systolic;
+
                 intent.putExtra("SYSTOLIC", systolic);
                 intent.putExtra("DIASTOLLIC", diastollic);
                 BloodPressure.this.startActivity(intent);

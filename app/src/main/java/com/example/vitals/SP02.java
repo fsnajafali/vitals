@@ -45,8 +45,8 @@ public class SP02 extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SP02.this, Temperature.class);
-                String sp02 = input.getText().toString();
-                intent.putExtra("SP02", sp02);
+                double sp02 = Double.parseDouble(input.getText().toString());
+                SavedVital.getInstance().vitalRecord.spo2 = sp02;
                 SP02.this.startActivity(intent);
             }
         });

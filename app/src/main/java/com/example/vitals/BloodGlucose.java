@@ -41,8 +41,8 @@ public class BloodGlucose extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BloodGlucose.this, ReviewPage.class);
-                String bloodglucose = input.getText().toString();
-                intent.putExtra("BLOODGLUCOSE", bloodglucose);
+                double bloodglucose = Double.parseDouble(input.getText().toString());
+                SavedVital.getInstance().vitalRecord.bloodSugar = bloodglucose;
                 BloodGlucose.this.startActivity(intent);
             }
         });

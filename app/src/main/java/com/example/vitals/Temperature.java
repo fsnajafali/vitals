@@ -44,8 +44,8 @@ public class Temperature extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Temperature.this, BloodGlucose.class);
-                String temperature = input.getText().toString();
-                intent.putExtra("TEMPERATURE", temperature);
+                double temperature = Double.parseDouble(input.getText().toString());
+                SavedVital.getInstance().vitalRecord.temperature = temperature;
                 Temperature.this.startActivity(intent);
             }
         });

@@ -39,12 +39,12 @@ public class firebasefunctions {
         mDatabase.addValueEventListener(readVitalListener);
     }
 
-    public void writeFBData(VitalRecord newVitalRecord) {
+    public void writeFBData() {
         mDatabase = FirebaseDatabase.getInstance().getReference();
 //        VitalRecord newVitalRecord = new VitalRecord("d", "t", 0, 0, 0, 0, 0, 0.0);
 
         DatabaseReference newVitalsRef = mDatabase.push();
 
-        newVitalsRef.setValue(newVitalRecord);
+        newVitalsRef.setValue(SavedVital.getInstance().vitalRecord);
     }
 }
