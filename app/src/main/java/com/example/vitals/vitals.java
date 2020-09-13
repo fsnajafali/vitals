@@ -21,7 +21,7 @@ public class vitals extends AppCompatActivity
         findViewById(R.id.startvitals).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(vitals.this, VitalRecord.class);
+                Intent intent = new Intent(vitals.this, BloodPressure.class);
                 vitals.this.startActivity(intent);
             }
         });
