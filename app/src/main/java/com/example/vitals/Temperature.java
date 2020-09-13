@@ -27,6 +27,7 @@ public class Temperature extends AppCompatActivity
     //resource: https://www.youtube.com/watch?v=71H9-MRXYOE
 
     TextView dateTime;
+    TextView input;
     // HorizontalStepView horizontalStepView;
 
     @Override
@@ -40,6 +41,8 @@ public class Temperature extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Temperature.this, BloodGlucose.class);
+                String temperature = input.getText().toString();
+                intent.putExtra("TEMPERATURE", temperature);
                 Temperature.this.startActivity(intent);
             }
         });

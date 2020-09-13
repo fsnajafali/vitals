@@ -28,6 +28,7 @@ public class SP02 extends AppCompatActivity
     //resource: https://www.youtube.com/watch?v=71H9-MRXYOE
 
     TextView dateTime;
+    TextView input;
     // HorizontalStepView horizontalStepView;
 
     @Override
@@ -41,6 +42,8 @@ public class SP02 extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SP02.this, Temperature.class);
+                String sp02 = input.getText().toString();
+                intent.putExtra("SP02", sp02);
                 SP02.this.startActivity(intent);
             }
         });

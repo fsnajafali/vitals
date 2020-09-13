@@ -28,6 +28,7 @@ public class BloodPressure extends AppCompatActivity
 
     TextView dateTime;
     // HorizontalStepView horizontalStepView;
+    TextView input, input2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,6 +41,10 @@ public class BloodPressure extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BloodPressure.this, HeartRate.class);
+                String systolic = input.getText().toString();
+                String diastollic = input2.getText().toString();
+                intent.putExtra("SYSTOLIC", systolic);
+                intent.putExtra("DIASTOLLIC", diastollic);
                 BloodPressure.this.startActivity(intent);
             }
         });

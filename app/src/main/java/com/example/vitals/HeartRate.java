@@ -28,6 +28,7 @@ public class HeartRate extends AppCompatActivity
 
     TextView dateTime;
     // HorizontalStepView horizontalStepView;
+    TextView input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,6 +41,8 @@ public class HeartRate extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HeartRate.this, SP02.class);
+                String heartRate = input.getText().toString();
+                intent.putExtra("HEARTRATE", heartRate);
                 HeartRate.this.startActivity(intent);
             }
         });

@@ -97,6 +97,73 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="277dp"
         android:layout_marginRight="121dp"
+        android:text="date"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/resultSystolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="317dp"
+        android:layout_marginRight="102dp"
+        android:text="systolic"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/resultDiastollic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="364dp"
+        android:layout_marginRight="95dp"
+        android:text="diastollic"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/resultHearRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="409dp"
+        android:layout_marginRight="96dp"
+        android:text="heart rate"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/resultSP02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="454dp"
+        android:layout_marginRight="120dp"
+        android:text="sp02"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/resultTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="488dp"
+        android:layout_marginRight="83dp"
+        android:text="temperature"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/resultBloodglucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="526dp"
+        android:layout_marginRight="72dp"
+        android:text="blood glucose"
         android:textSize="12sp" />
 
     <TextView

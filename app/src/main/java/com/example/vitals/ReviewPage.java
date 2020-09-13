@@ -27,7 +27,12 @@ public class ReviewPage extends AppCompatActivity
     //resource: https://www.youtube.com/watch?v=71H9-MRXYOE
 
     TextView dateTime;
-
+    TextView resultDateTime;
+    TextView resultSystolic, resultDiastollic;
+    TextView resultHeartRate;
+    TextView resultSP02;
+    TextView resultTemperature;
+    TextView resultBloodglucose;
     // HorizontalStepView horizontalStepView;
 
     @Override
@@ -62,10 +67,36 @@ public class ReviewPage extends AppCompatActivity
 
         dateTime.setText(formattedDate);
 
-        String shortDate = DateFormat.getDateInstance(DateFormat.DEFAULT).format(currentTime);
+        String shortDate = DateFormat.getDateInstance(DateFormat.SHORT).format(currentTime);
         shortDate = shortDate + " " + DateFormat.getTimeInstance().format(currentTime);
 
+        resultDateTime = findViewById(R.id.resultDateTime);
+        resultDateTime.setText(shortDate);
 
+        resultSystolic = (TextView) findViewById(R.id.resultSystolic);
+        resultDiastollic = (TextView) findViewById(R.id.resultDiastollic);
+
+        resultSystolic.setText(getIntent().getExtras().getString("SYSTOLIC") + " mmHg");
+        resultDiastollic.setText(getIntent().getExtras().getString("DIASTOLLIC") + " mmHg");
+
+        resultHeartRate = (TextView) findViewById(R.id.resultHearRate);
+
+        resultHeartRate.setText(getIntent().getExtras().getString("HEARTRATE") + " beats/min");
+
+        resultSP02 = (TextView) findViewById(R.id.resultSP02);
+
+        resultSP02.setText(getIntent().getExtras().getString("SP02") + " %");
+
+        resultTemperature = (TextView) findViewById(R.id.resultTemperature);
+
+        resultTemperature.setText(getIntent().getExtras().getString("TEMPERATURE") + " \\u2109");
+
+        resultBloodglucose = (TextView) findViewById(R.id.resultBloodglucose);
+
+        resultBloodglucose.setText(getIntent().getExtras().getString("BLOODGLUCOSE") + " mg/dL");
+
+//        Log.d("myLog", shortDate);
+//        System.out.println(shortDate);
 
 //        horizontalStepView = (HorizontalStepView)findViewById(R.id.horizontalStepView);
 //        List<String> steps = new ArrayList<>();

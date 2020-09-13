@@ -23,9 +23,8 @@ import static com.example.vitals.R.layout.activity_bloodpressure;
 
 public class BloodGlucose extends AppCompatActivity
 {
-
-
     TextView dateTime;
+    TextView input;
     // HorizontalStepView horizontalStepView;
 
     @Override
@@ -39,6 +38,8 @@ public class BloodGlucose extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BloodGlucose.this, ReviewPage.class);
+                String bloodglucose = input.getText().toString();
+                intent.putExtra("BLOODGLUCOSE", bloodglucose);
                 BloodGlucose.this.startActivity(intent);
             }
         });

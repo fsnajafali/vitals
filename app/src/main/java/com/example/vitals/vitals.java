@@ -25,7 +25,5 @@ public class vitals extends AppCompatActivity
                 vitals.this.startActivity(intent);
             }
         });
-
-
     }
 }
